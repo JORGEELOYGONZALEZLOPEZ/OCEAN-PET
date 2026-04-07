@@ -1,0 +1,40 @@
+.encabezado {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 0 0 8000px rgb(255, 255, 255);
+    justify-content: space-between;
+    padding: 0px 20px;
+    background: linear-gradient(90deg, #ffffff 0%, #ffffff 50%, rgb(255, 255, 255) 100%);
+}
+
+.menu ul{
+    margin-right: 60px;
+    list-style: none;
+    display: flex;
+    font-size: 23px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 25px;
+}
+.menu li {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    display: flex;
+    width: 190px;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border-radius: 20px;
+
+}
+
+.menu li:hover{
+    background-color: rgb(255, 152, 152);
+    box-shadow: 0 1px 25px 25px rgb(255, 0, 0);
+}

@@ -1,0 +1,9 @@
+.card{
+    margin-left: 16%;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    border-radius: 90px;
+    width: 68%;
+    height: 700px;
+    background-image:url('./assets/oceano.jpg');
+}   
