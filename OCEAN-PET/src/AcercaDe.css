@@ -1,0 +1,112 @@
+.acerca-pantalla {
+    min-height: 100vh;
+    padding: 100px 5% 50px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+/* Header */
+.acerca-hero {
+    text-align: center;
+    max-width: 800px;
+}
+
+.tag-pro {
+    background: rgba(38, 198, 218, 0.15);
+    color: #26c6da;
+    padding: 6px 15px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    border: 1px solid rgba(38, 198, 218, 0.4);
+    letter-spacing: 1px;
+}
+
+.titulo-principal {
+    font-size: 4rem;
+    color: white;
+    margin-top: 25px;
+    font-weight: 800;
+    line-height: 1.1;
+    text-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.subtitulo {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Grid de Tarjetas */
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.tarjeta-formal {
+    background: rgba(255, 255, 255, 0.158);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 35px;
+    padding: 40px;
+    text-align: left;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.tarjeta-formal:hover {
+    transform: translateY(-55px);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(38, 197, 218, 0.84);
+    box-shadow: 0 20px 40px rgba(0, 172, 193, 0.2);
+}
+
+.icon-box {
+    width: 50px;
+    height: 50px;
+    background: rgba(38, 198, 218, 0.2);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.tarjeta-formal h3 {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.tarjeta-formal p {
+    color: rgb(255, 255, 255);
+    line-height: 1.6;
+}
+
+/* Stats Footer */
+.stats-bar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 900px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 40px;
+}
+
+.stat h4 {
+    font-size: 2.5rem;
+    color: #81d4fa;
+    margin: 0;
+}
+
+.stat span {
+    color: rgba(255, 255, 255, 0.807);
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+}

@@ -3,7 +3,72 @@
     flex-wrap: wrap;
     margin-top: 150px;
     border-radius: 90px;
-    width: 68%;
-    height: 700px;
-    background-image:url('./assets/oceano.jpg');
+    width: 58%;
+    height: 500px;
+    font-size: 20px;
+    color: aliceblue;
+
+    background-image: url('./assets/oceano.jpg');
+    padding: 90px 90px;
 }   
+
+.InicioDiv{
+    margin-top: 150px;
+}
+.cuerpo {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    margin-left: 5%;
+    margin-top: 50px;
+    flex-grow: 1;
+}
+
+.interior {
+    width: 85%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+.interior div {
+    flex: 1 ;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+.interior div div{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagenes{
+    margin-top: 10px;
+}
+.interior div h3{
+    margin-top: 10px;
+    color: #000000;
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 40px;
+}
+.interior div p{
+    margin-top: 10px;
+    color: #000000;
+    display: flex;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 90px;
+}
