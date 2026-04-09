@@ -72,3 +72,19 @@
     justify-content: center;
     padding: 10px 90px;
 }
+.button{
+    font-size: 30px;
+    
+}
+.button li{
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 35px;
+    padding: 40px;
+    width: 170px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.button ul{
+    list-style: none;
+}

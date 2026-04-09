@@ -17,7 +17,9 @@ function Card(){
     return(
         <div className="card">
             <div>
+                <br />
                 <h1 className='h1'>Salvando los océanos de México</h1>
+                <br />  
                 <h3 className='h3'>Transformamos el plástico recuperado del Pacifico y el Golfo de México en productos sustentables y funcionales</h3>
             </div>
         </div>   

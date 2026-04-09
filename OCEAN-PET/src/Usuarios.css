@@ -1,0 +1,109 @@
+/* Contenedor principal */
+.usuarios-page {
+    padding: 40px 5%;
+    color: white;
+    min-height: 100vh;
+}
+
+/* Título principal */
+.usuarios-page h1 {
+    font-size: 2.5rem;
+    color: #26c6da;
+    margin-bottom: 30px;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-left: 5px solid #26c6da;
+    padding-left: 15px;
+}
+
+/* Estilo de la Tabla (Quitamos los bordes viejos de HTML) */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px; /* Separa las filas para efecto de tarjetas */
+    background: transparent;
+}
+
+/* Cabecera de la tabla */
+thead tr {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px);
+}
+
+thead th {
+    padding: 20px !important;
+    color: #81d4fa;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    border: none !important;
+}
+
+/* Filas de la tabla */
+tbody tr {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+tbody tr:hover {
+    background: rgba(255, 255, 255, 0.12);
+    transform: scale(1.01);
+}
+
+tbody td {
+    padding: 15px 20px !important;
+    border: none !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Redondear las esquinas de las filas */
+tbody tr td:first-child {
+    border-radius: 15px 0 0 15px;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+tbody tr td:last-child {
+    border-radius: 0 15px 15px 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Botones de Acción */
+button {
+    padding: 8px 15px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    transition: all 0.2s;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+/* Botón Editar (📝) */
+button[onClick*="setUsuarioSeleccionado"]:hover {
+    background: #26c6da;
+    box-shadow: 0 0 15px rgba(38, 198, 218, 0.5);
+    transform: translateY(-2px);
+}
+
+/* Botón Eliminar (🗑️) */
+button[onClick*="removeUsuario"]:hover {
+    background: #ff5252;
+    box-shadow: 0 0 15px rgba(255, 82, 82, 0.5);
+    color: white !important;
+    transform: translateY(-2px);
+}
+
+/* Ajuste para el componente de Registro arriba */
+.Registrar {
+    margin-bottom: 50px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 30px;
+    border-radius: 30px;
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+}
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

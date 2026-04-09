@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(90deg, #fdffff 0%, #4a5bf5ba 50%, #3cdaf2 100%);
+    background: linear-gradient(90deg, #0000005e 0%, #000000ba 50%, #0000005e 100%);
 }
 
 .menu ul{
@@ -34,5 +34,5 @@
     transform: translateY(-10px);
     background: rgba(255, 255, 255, 0.216);
     border-color: rgba(38, 197, 218, 0.84);
-    box-shadow: 0 20px 40px rgba(0, 172, 193, 0.2);
+    box-shadow: 0 0px 80px rgb(0, 171, 193);
 }
