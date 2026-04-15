@@ -37,17 +37,17 @@ function Menu({cambiarVista}){
             <ul>
                 <li onClick={() => cambiarVista("Inicio")}><img src={inicio} alt="Inicio"/> Inicio</li>
                 <li onClick={() => cambiarVista("AcercaDe")}><img src={Acercade} alt="AcercaDe"/> Acerca de</li>
-                {isLoggedIn ? (
-                    <>
+                {/*{isLoggedIn ?
+                    <>*/}
                         <li onClick={() => cambiarVista("Productos")}><img src={Productos} alt="Prodcutos"/> Productos</li>
                         <li onClick={() => cambiarVista("Contactos")}><img src={Contacto} alt="Contacto"/> Contacto</li>
                         <li onClick={() => cambiarVista("Usuarios")}><img src={Usuarios} alt="Usuarios"/> Usuarios</li>
                         <li onClick={() => cambiarVista("Carrito")}><img src={carrito} alt="Carrito"/> Carrito</li>
-                        <li onClick={handleLogout}>Cerrar Sesion</li>
-                     </>
-                ) : (
+                        {/*<li onClick={handleLogout}>Cerrar Sesion</li>
+                        </>
+                ) : (*/}
                     <li onClick={() => cambiarVista("Login")}><img src={Login} alt="Login"/> Login</li>
-                )}
+                    {/*)}*/}
             </ul>
         </nav>
     )

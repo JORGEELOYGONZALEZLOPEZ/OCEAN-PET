@@ -3,17 +3,18 @@ import imagen1 from './assets/recoleccion.png';
 import imagen2 from './assets/mar.png';
 import imagen3 from './assets/producto.png';
 import PropTypes from 'prop-types';
+import Productos from './assets/productos.png';
 
 
-function Inicio (){
+function Inicio ({cambiarVista}){
     return(
         <div className='contenido'>
-            <Card/>
+            <Card cambiarVista={cambiarVista}/>
             <Inicio1/>
         </div>
     )
 }
-function Card(){
+function Card({cambiarVista}){
     return(
         <div className="card">
             <div>
@@ -21,6 +22,9 @@ function Card(){
                 <h1 className='h1'>Salvando los océanos de México</h1>
                 <br />  
                 <h3 className='h3'>Transformamos el plástico recuperado del Pacifico y el Golfo de México en productos sustentables y funcionales</h3>
+                <br />
+                <br />
+                <li onClick={() => cambiarVista("Login")}><img src={Productos} alt="Prodcutos"/> Productos</li>
             </div>
         </div>   
     )
@@ -63,5 +67,8 @@ Tarjeta.propTypes = {
     name: PropTypes.string.isRequired,
     src: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired
+};
+Card.propTypes = {
+    cambiarVista: PropTypes.func.isRequired
 };
 export default Inicio;

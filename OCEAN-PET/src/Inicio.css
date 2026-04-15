@@ -1,5 +1,5 @@
 .card{
-    margin-left: 16%;
+    margin-left: 21%;
     flex-wrap: wrap;
     margin-top: 150px;
     border-radius: 90px;
@@ -76,15 +76,14 @@
     font-size: 30px;
     
 }
-.button li{
-    background: rgba(0, 0, 0, 0.5);
+.card li {
+    background: rgba(0, 0, 0, 0.512);
     border-radius: 35px;
-    padding: 40px;
-    width: 170px;
-    color: rgb(255, 255, 255);
+    padding: 20px;
+    width: 200px;
+    list-style: none;
+    color: whitesmoke;
+    font-size: 1.6rem;
     text-align: center;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-.button ul{
-    list-style: none;
 }

@@ -1,0 +1,42 @@
+.politica-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05); /* Fondo ligero */
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    border-radius: 15px;
+}
+
+.politica-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.politica-header h1 {
+    color: #00d2ff; /* Color acorde a Ocean Pet */
+}
+
+.politica-content h3 {
+    margin-top: 25px;
+    color: #00d2ff;
+}
+
+.politica-content ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.politica-content hr {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 20px 0;
+}
+
+.politica-footer-nota {
+    margin-top: 40px;
+    padding: 15px;
+    border-left: 4px solid #00d2ff;
+    background-color: rgba(0, 210, 255, 0.1);
+}

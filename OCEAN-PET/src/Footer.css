@@ -1,7 +1,65 @@
 .Cuerpo{
     width: 100%;
-    height: 400px;
+    height: 300px;
     bottom: 0;
     margin-top: 120px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.395);
+}
+.contenedor-grid1 {
+    margin-top: 100px;
+    background: rgba(0, 0, 0, 0.696);
+    display: flex;
+    gap: 135px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    width: 100%;
+    max-width: 1920px;
+}
+.tarjeta-formal1 {
+    border-radius: 35px;
+    align-items: center;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    padding: 40px;
+    text-align: left;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.tarjeta-formal1 img{
+    width: 40px;
+}
+.tarjeta-formal2 {
+    background: rgba(255, 255, 255, 0.084);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 35px;
+    padding: 40px;
+    width: 1200px;
+    color: whitesmoke; 
+    text-align: left;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.tarjeta-formal2 li{
+    width: 50%;
+    margin-left: 25%;
+    align-items: center;
+    list-style: none;
+    color: whitesmoke;
+    font-size: 1.6rem;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.tarjeta-formal3 {
+    padding: 40px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

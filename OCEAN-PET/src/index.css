@@ -1,0 +1,17 @@
+/* Esto elimina los márgenes y rellenos de todos los elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Asegura que el body y el contenedor de React ocupen todo el ancho */
+html, body, #root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
