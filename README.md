@@ -8,6 +8,4 @@ Documentación de Proyecto Full-Stack
 🌐 Integraciones y SeguridadOpenWeather API: Implementación de datos climáticos para monitorear zonas de recolección.GitHub Push Protection: Reglas activas para prevenir la exposición de llaves API.Control de Versiones: Uso estricto de .gitignore.
 🛠️ Requisitos PreviosAsegúrate de tener instalado Node.js y npm. Verifica con:Bashnode -v
 Bashnpm -v
-🚀 Instalación y UsoClonar el repositorio:Bashgit clone https://github.com/JORGEELOYGONZALEZLOPEZ/OCEAN-PET.git
-Instalar dependencias:Bashnpm install
 Configurar entorno:Crea un archivo .env con tus credenciales de MySQL y tu clave de OpenWeather.Iniciar proyecto:Bashnpm start
