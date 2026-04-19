@@ -3,11 +3,8 @@ import miImagen from './assets/logo.png';
 import inicio from './assets/home.png';
 import carrito from './assets/carrito.gif';
 import Usuarios from './assets/usuarios.png';
-import Acercade from './assets/acercade.png';
 import Login from './assets/login.png';
-import Contacto from './assets/contacto.png';
 import Productos from './assets/productos.png';
-
 import PropTypes from 'prop-types';
 import { useAuth } from './AuthContext';
 
@@ -35,19 +32,17 @@ function Menu({cambiarVista}){
     return(
         <nav className='menu'>
             <ul>
-                <li onClick={() => cambiarVista("Inicio")}><img src={inicio} alt="Inicio"/> Inicio</li>
-                <li onClick={() => cambiarVista("AcercaDe")}><img src={Acercade} alt="AcercaDe"/> Acerca de</li>
-                {/*{isLoggedIn ?
-                    <>*/}
-                        <li onClick={() => cambiarVista("Productos")}><img src={Productos} alt="Prodcutos"/> Productos</li>
-                        <li onClick={() => cambiarVista("Contactos")}><img src={Contacto} alt="Contacto"/> Contacto</li>
-                        <li onClick={() => cambiarVista("Usuarios")}><img src={Usuarios} alt="Usuarios"/> Usuarios</li>
-                        <li onClick={() => cambiarVista("Carrito")}><img src={carrito} alt="Carrito"/> Carrito</li>
-                        {/*<li onClick={handleLogout}>Cerrar Sesion</li>
+                <button onClick={() => cambiarVista("Inicio")}><img src={inicio} alt="Inicio"/> Inicio</button>
+                {isLoggedIn ? (
+                    <>
+                        <button onClick={() => cambiarVista("Productos")}><img src={Productos} alt="Prodcutos"/> Productos</button>
+                        <button onClick={() => cambiarVista("Usuarios")}><img src={Usuarios} alt="Usuarios"/> Usuarios</button>
+                        <button onClick={() => cambiarVista("Carrito")}><img src={carrito} alt="Carrito"/> Carrito</button>
+                        <button onClick={handleLogout}>Cerrar Sesion</button>
                         </>
-                ) : (*/}
-                    <li onClick={() => cambiarVista("Login")}><img src={Login} alt="Login"/> Login</li>
-                    {/*)}*/}
+                ) : (
+                    <button onClick={() => cambiarVista("Login")}><img src={Login} alt="Login"/> Login</button>
+                    )}
             </ul>
         </nav>
     )

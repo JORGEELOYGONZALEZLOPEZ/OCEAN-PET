@@ -7,7 +7,6 @@
     height: 500px;
     font-size: 20px;
     color: aliceblue;
-
     background-image: url('./assets/oceano.jpg');
     padding: 90px 90px;
 }   
@@ -76,11 +75,11 @@
     font-size: 30px;
     
 }
-.card li {
+.card button {      
     background: rgba(0, 0, 0, 0.512);
     border-radius: 35px;
     padding: 20px;
-    width: 200px;
+    width: 250px;
     list-style: none;
     color: whitesmoke;
     font-size: 1.6rem;

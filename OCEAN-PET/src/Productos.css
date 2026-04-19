@@ -1,0 +1,224 @@
+/* Contenedor Principal */
+.productos-container {
+    padding: 40px 20px;
+    max-width: 1800px; /* Ajustado para que no sea tan excesivamente ancho */
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fafc58;
+}
+
+.productos-container h1 {
+    text-align: center;
+    color: #1e293b;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* La Cuadrícula (Grid) - AQUÍ ESTÁ EL CAMBIO CLAVE */
+.productos-grid {
+    display: grid; 
+    /* Forzamos 4 columnas de igual tamaño */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; /* Bajé el gap de 100px a 30px para que quepan bien los 4 */
+}
+
+/* Diseño de la Tarjeta */
+.producto-card {
+    background: #ffffff;
+    border-radius: 16px;
+    width: 100%; /* Cambiado de 50% a 100% para que ocupe su celda del grid */
+    height: 520px; /* Un poco más de altura para el contenido */
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e2e8f0;
+}
+
+.producto-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen del Producto */
+.producto-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* Contenido de la Tarjeta */
+.producto-card h3 {
+    margin: 15px 20px 10px;
+    font-size: 1.2rem;
+    color: #0f172a;
+    font-weight: 700;
+    /* Evita que nombres largos rompan el diseño */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.producto-card p {
+    margin: 0 20px 10px;
+    color: #334155;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    flex-grow: 1;
+}
+
+/* Precio y Stock */
+.precio {
+    font-size: 1.4rem !important;
+    font-weight: 800;
+    color: #0284c7 !important;
+    margin: 10px 20px !important;
+}
+
+.producto-card p:last-of-type {
+    font-weight: 600;
+    color: #64748b;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+/* Botón Comprar */
+.btn {
+    background-color: #f1f5f9;
+    color: #1e293b;
+    border: 1px solid #e2e8f0;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.btn:hover {
+    background-color: #22c55e; /* Verde al pasar el mouse */
+    color: white;
+    border-color: #22c55e;
+}
+
+/* Responsivo para tablets y celulares */
+@media (max-width: 1024px) {
+    .productos-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 por fila en tablet */
+    }
+}
+
+@media (max-width: 600px) {
+    .productos-grid {
+        grid-template-columns: 1fr; /* 1 por fila en celular */
+    }
+}
+/* Contenedor de la imagen */
+.zoom-container {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    cursor: crosshair;
+}
+
+.img-base {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* La Lupa flotante */
+.zoom-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 250%; /* Nivel de zoom */
+    pointer-events: none; /* Importante para que no interfiera con el mouse */
+    border: 2px solid #e2e8f0;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Estilo extra para las tarjetas de la foto */
+.producto-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.producto-card:hover {
+    transform: translateY(-5px);
+}
+/* Contenedor principal del buscador */
+.buscador-container {
+    max-width: 650px;
+    margin: 20px auto 40px; /* Centrado con espacio inferior */
+    padding: 0 20px;
+    position: relative;
+}
+
+/* El input de texto */
+.input-buscador {
+    width: 100%;
+    padding: 14px 25px;
+    font-size: 1.1rem;
+    color: #1e293b;
+    background-color: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-radius: 50px; /* Bordes redondeados tipo píldora */
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+/* Efecto al hacer clic o escribir */
+.input-buscador:focus {
+    border-color: #0284c7; /* Azul océano */
+    box-shadow: 0 10px 15px -3px rgba(2, 132, 199, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Estilo para el placeholder */
+.input-buscador::placeholder {
+    color: #94a3b8;
+    font-weight: 400;
+}
+/* Diseño cuando NO hay resultados */
+.no-resultados {
+    grid-column: 1 / -1; /* Ocupa todo el ancho del grid */
+    text-align: center;
+    padding: 60px 20px;
+    background: #f8fafc;
+    border-radius: 20px;
+    border: 2px dashed #cbd5e1;
+}
+
+.no-resultados p {
+    font-size: 1.3rem;
+    color: #475569;
+    margin-bottom: 20px;
+}
+
+.btn-ver-todos {
+    background-color: #0284c7;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.btn-ver-todos:hover {
+    background-color: #0369a1;
+}

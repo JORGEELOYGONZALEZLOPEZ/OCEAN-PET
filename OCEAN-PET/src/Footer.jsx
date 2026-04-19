@@ -23,19 +23,31 @@ function Menu ({cambiarVista}){
                 </div>
 
                 <div className="tarjeta-formal2">   
-                    <li onClick={() => cambiarVista("PoliticaPrivacidad")}>Politica de Privacidad</li>
+                    <div>
+                        <button onClick={() => cambiarVista("PoliticaPrivacidad")}>Politica de Privacidad</button>
+                        <button onClick={() => cambiarVista("AcercaDe")}>Acerca De</button>
+                        <button onClick={() => cambiarVista("Contactos")}>Contacto</button>
+                    </div>
                     <p>Operamos directamente en las costas del Pacífico y el Golfo de México, apoyando comunidades.</p>
                 </div>
 
                 <div className="tarjeta-formal3">
-                    <img src={instagram} alt="Redes Sociales" />
-                    <img src={facebook} alt="Redes Sociales" />
-                    <img src={linkedin} alt="Redes Sociales" />
-                    <img src={x} alt="Redes Sociales" />
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                        <img src={instagram} alt="Instagram" />
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                        <img src={facebook} alt="Facebook" />
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <img src={linkedin} alt="LinkedIn" />
+                    </a>
+                    <a href="https://www.x.com" target="_blank" rel="noopener noreferrer">
+                        <img src={x} alt="X" />
+                    </a>
                 </div>
             </section>
     )
-}
+}   
 Menu.propTypes = {
     cambiarVista: PropTypes.func.isRequired
 };

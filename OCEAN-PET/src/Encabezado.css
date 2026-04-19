@@ -13,17 +13,17 @@
     margin-right: 60px;
     list-style: none;
     display: flex;
-    font-size: 23px;
+    font-size: 43px;
     font-style: italic;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     gap: 25px;
 }
-.menu li {
+.menu button {
     background: rgba(255, 255, 255, 0.108);
     border-radius: 35px;
     padding: 20px;
-    width: 190px;
+    width: 230px;
     color: whitesmoke;
     text-align: center;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);

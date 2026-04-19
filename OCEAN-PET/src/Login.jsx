@@ -6,22 +6,22 @@ import { useAuth } from './AuthContext';
 function Login ({chVista}){
     const {Login } = useAuth();
 
-    const [username, setUsername] = useState('');
+    const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log("Datos de registro:", { username, password});
+        console.log("Datos de registro:", { email, password});
 
         try{
-            const credenciales = { username, password };
-            const respuesta = await api.post('/auth/login/', credenciales);
+            const credenciales = { email, password };
+            const respuesta = await api.post('/usuarios/login', credenciales);
             if (respuesta.data && respuesta.data.token){
                 Login(respuesta.data.token);
                 alert('Autenticacion autorisada');
-                setUsername('');
+                setEmail('');
                 setPassword('');    
-                chVista("usuarios");
+                chVista("Inicio");
                 
             }else{
                 alert('Credenciales invalidas');
@@ -34,7 +34,7 @@ function Login ({chVista}){
     };
 
     const handleCancelar = () => {
-        setUsername('');
+        setEmail('');
         setPassword('');
     };
 
@@ -47,9 +47,9 @@ function Login ({chVista}){
                         <label>Usuario</label>
                         <input 
                             type="text" 
-                            placeholder="Ej. Eloy_gonzalez"
-                            value={username} 
-                            onChange={(e) => setUsername(e.target.value)} 
+                            placeholder="luis.mtz2@oceanpet.mx"
+                            value={email} 
+                            onChange={(e) => setEmail(e.target.value)} 
                         />
                     </div>
 

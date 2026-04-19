@@ -1,0 +1,56 @@
+/* Contenedor principal */
+.divClima {
+    background: linear-gradient(135deg, #1e3b8a23 0%, #3b83f62c 100%);
+    color: white;
+    padding: 25px;
+    min-height: 120px;
+    border-radius: 16px;
+    width: fit-content;
+    min-width: 100%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+
+}
+
+/* El nombre de la ciudad y la temperatura (Primer <p>) */
+.divClima p:first-of-type {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 75%;
+    display: flex;
+    gap: 8px;
+}
+
+/* El texto de la temperatura (puedes envolver el dato en un span si quieres más detalle, 
+pero así estiliza todo el bloque de texto) */
+.divClima p:first-of-type::after {
+    content: "°C"; /* Simplemente añade la unidad visualmente */
+    font-size: 0.8rem;
+    margin-left: 2px;
+}
+
+/* La descripción (Segundo <p>) */
+.divClima p:last-of-type {
+    text-transform: capitalize;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 6px 12px;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 0.9rem;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+/* Estado de carga */
+.divClima p:only-child {
+    font-weight: 100;
+    letter-spacing: 1px;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
